@@ -10,7 +10,7 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
-from config import ADMINS, FORCE_SUB_CHANNEL, FORCE_SUB_GROUP
+from config import ADMINS, FORCE_SUB_CHANNEL,FORCE_SUB_CHANNEL2, FORCE_SUB_GROUP
 
 
 async def subschannel(filter, client, update):
@@ -100,7 +100,6 @@ async def decode(base64_string):
     string_bytes = base64.urlsafe_b64decode(base64_bytes) 
     string = string_bytes.decode("ascii")
     return string
-
 
 async def get_messages(client, message_ids):
     messages = []
