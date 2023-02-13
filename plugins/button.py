@@ -26,10 +26,10 @@ def start_button(client):
             ],
         ]
         return buttons
-    if not FORCE_SUB_GROUP and FORCE_SUB_CHANNEL and FORCE_SYB_CHANNEL2:
+    if not FORCE_SUB_GROUP and FORCE_SUB_CHANNEL and FORCE_SUB_CHANNEL2:
         buttons = [
             [
-                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ""ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+                InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ""ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
             ],
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
