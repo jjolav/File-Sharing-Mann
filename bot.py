@@ -73,7 +73,7 @@ class Bot(Client):
                 )
                 sys.exit()
                 
-                if FORCE_SUB_CHANNEL2:
+         if FORCE_SUB_CHANNEL2:
             try:
                 info = await self.get_chat(FORCE_SUB_CHANNEL2)
                 link = info.invite_link
@@ -87,7 +87,7 @@ class Bot(Client):
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
                 self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_CHANNEL!"
+                    "Bot tidak dapat Mengambil link invite dari FORCE_SUB_CHANNEL2!"
                 )
                 self.LOGGER(__name__).warning(
                     f"Pastikan @{self.username} adalah admin di Channel Tersebut, Chat ID F-Subs Channel Saat Ini: {FORCE_SUB_CHANNEL2}"
