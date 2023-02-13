@@ -2,7 +2,7 @@
 # FROM File-Sharing-Man <https://github.com/mrismanaziz/File-Sharing-Man/>
 # t.me/SharingUserbot & t.me/Lunatic0de
 
-from config import FORCE_SUB_CHANNEL, FORCE_SUB_GROUP
+from config import FORCE_SUB_CHANNEL, FORCE_SUB_CHANNEL2, FORCE_SUB_GROUP
 from pyrogram.types import InlineKeyboardButton
 
 
@@ -26,7 +26,7 @@ def start_button(client):
             ],
         ]
         return buttons
-    if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
+    if FORCE_SUB_CHANNEL2 and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
@@ -70,7 +70,7 @@ def fsub_button(client, message):
         except IndexError:
             pass
         return buttons
-    if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP:
+    if FORCE_SUB_CHANNEL2 and not FORCE_SUB_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
