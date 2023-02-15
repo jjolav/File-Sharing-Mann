@@ -151,7 +151,12 @@ async def start_command(client: Bot, message: Message):
 
 @Bot.on_message(filters.command("start") & filters.private)
 async def not_joined(client: Bot, message: Message):
-    buttons = fsub_button(client, message)
+    buttons = [
+        [
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink3),
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
+        [
     await message.reply(
         text=FORCE_MSG.format(
             first=message.from_user.first_name,
