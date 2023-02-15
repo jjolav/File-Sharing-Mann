@@ -156,7 +156,9 @@ async def not_joined(client: Bot, message: Message):
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
             InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink3),
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink2),
-        [
+        
+         [,
+        
     await message.reply(
         text=FORCE_MSG.format(
             first=message.from_user.first_name,
